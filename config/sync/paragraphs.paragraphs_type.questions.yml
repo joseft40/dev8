@@ -1,0 +1,9 @@
+uuid: f076c816-d14b-4808-b43e-a35f5de715cb
+langcode: en
+status: true
+dependencies: {  }
+id: questions
+label: Questions
+icon_uuid: null
+description: 'Questions for quiz'
+behavior_plugins: {  }

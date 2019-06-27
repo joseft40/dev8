@@ -1,0 +1,31 @@
+uuid: e50df6cb-5c7b-4476-a932-c0ee4309d092
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.quiz.field_questions_quiz
+    - node.type.quiz
+  module:
+    - entity_reference_revisions
+    - user
+id: node.quiz.default
+targetEntityType: node
+bundle: quiz
+mode: default
+content:
+  field_questions_quiz:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

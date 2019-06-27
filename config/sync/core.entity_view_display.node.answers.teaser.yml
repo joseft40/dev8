@@ -1,0 +1,28 @@
+uuid: 016f678b-fa11-482d-9efd-e2d2b2fbdc00
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.answers.body
+    - field.field.node.answers.field_is_a_correct_answers
+    - node.type.answers
+  module:
+    - options
+    - user
+id: node.answers.teaser
+targetEntityType: node
+bundle: answers
+mode: teaser
+content:
+  field_is_a_correct_answers:
+    type: list_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true
+  links: true

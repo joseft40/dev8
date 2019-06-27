@@ -1,0 +1,27 @@
+uuid: 97ddafbe-2a2a-4274-b572-21f91c90dbee
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_is_a_correct_answers
+field_name: field_is_a_correct_answers
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Yes'
+    -
+      value: '0'
+      label: 'No'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

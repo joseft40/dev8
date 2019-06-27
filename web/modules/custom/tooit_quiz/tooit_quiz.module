@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains tooit_quiz.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function tooit_quiz_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the decoupled_quiz module.
+    case 'help.page.tooit_quiz':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Integration Tooit Quiz module as block') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function tooit_quiz_theme() {
+  $theme['tooit_quiz_block_theme'] = [
+    'template' => 'tooit_quiz.block',
+    'variables' => [
+      'qid' => NULL,
+      'url' => NULL,
+    ],
+  ];
+
+  return $theme;
+}

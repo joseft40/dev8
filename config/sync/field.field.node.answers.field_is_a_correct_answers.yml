@@ -1,0 +1,21 @@
+uuid: 69701df9-0cca-4563-8e15-409422208f8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_a_correct_answers
+    - node.type.answers
+  module:
+    - options
+id: node.answers.field_is_a_correct_answers
+field_name: field_is_a_correct_answers
+entity_type: node
+bundle: answers
+label: 'Is a correct answers?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

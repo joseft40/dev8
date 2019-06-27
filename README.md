@@ -1,3 +1,66 @@
+# Development Workflow Built with Drupal 8
+
+## Environment setup
+
+### clone repository
+```
+git clone https://github.com/joseft40/dev8.git
+```
+
+### cd directory dev8
+```
+cd dev8
+```
+
+### Run Composer install
+```
+composer install
+```
+
+### cd directory web
+```
+cd web
+```
+
+### Install Drupal along with modules/themes/configuration using the specified install profile.
+```
+drush site-install
+```
+
+### Import drupal configuration
+if necessary, specify the path of the synchronization directory in the settings.php file
+```
+$config_directories['sync'] = '../config/sync';
+drush cr
+```
+
+### Import config from a config directory and clear cache
+```
+drush config-set "system.site" uuid "9fb3723c-e78a-415b-9ff4-b75abc879b78" && drush cr
+drush cim && drush cr
+```
+
+### Login
+```
+drush uli
+```
+
+### Create content Quiz
+```
+Content > add content > Quiz
+```
+
+### Set nid of content type Quiz in Block
+```
+Structure > Block layout > Quiz block (Region Content) > Configure > Quiz ID
+```
+
+### Create new content Question and set in another region
+```
+Content > add content > Quiz
+Structure > Block layout > Quiz block (Region Content) > Configure > Quiz ID
+```
+
 # Composer template for Drupal projects
 
 [![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)

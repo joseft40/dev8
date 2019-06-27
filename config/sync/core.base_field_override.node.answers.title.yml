@@ -1,0 +1,18 @@
+uuid: cd6b0724-6123-44a9-b1ad-9f8552fd4dc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.answers
+id: node.answers.title
+field_name: title
+entity_type: node
+bundle: answers
+label: 'Answers available'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,42 @@
+uuid: 7baa522e-cd10-474b-b0b6-d945bc2cdd67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.questions.field_answers_quiz
+    - field.field.paragraph.questions.field_title_question
+    - paragraphs.paragraphs_type.questions
+  module:
+    - inline_entity_form
+id: paragraph.questions.default
+targetEntityType: paragraph
+bundle: questions
+mode: default
+content:
+  field_answers_quiz:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Question
+      label_plural: Questions
+      allow_new: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_title_question:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -25,6 +25,7 @@
         "drupal/config_split": "^1.4",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.0",
+        "drupal/inline_entity_form": "^1.0",
         "drupal/jsonapi": "^2.4",
         "drupal/paragraphs": "^1.8",
         "drupal/restui": "^1.17",

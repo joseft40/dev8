@@ -1,0 +1,18 @@
+uuid: 746ae6ab-2d4f-4d55-8c9f-047575c68c2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.quiz
+id: node.quiz.title
+field_name: title
+entity_type: node
+bundle: quiz
+label: 'Title Quiz'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: fc62c39a-68ae-4428-a080-14467a42f346
+langcode: en
+status: true
+dependencies:
+  module:
+    - tooit_quiz
+  theme:
+    - bartik
+id: quizblock
+theme: bartik
+region: content
+weight: -3
+provider: null
+plugin: tooit_quizblock
+settings:
+  id: tooit_quizblock
+  label: 'Quiz block'
+  provider: tooit_quiz
+  label_display: visible
+  tooit_quiz_block_qid: '47'
+  tooit_quiz_block_url: api/quiz
+visibility: {  }

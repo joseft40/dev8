@@ -1,0 +1,11 @@
+uuid: 253a34f3-2f09-4304-ae67-b83c8f75b913
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.answers
+id: node.answers
+target_entity_type_id: node
+target_bundle: answers
+default_langcode: site_default
+language_alterable: false

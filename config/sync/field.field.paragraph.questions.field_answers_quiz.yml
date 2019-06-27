@@ -1,0 +1,29 @@
+uuid: 0fd825f1-b570-4d1b-9c3d-a55855ba1e25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_answers_quiz
+    - node.type.answers
+    - paragraphs.paragraphs_type.questions
+id: paragraph.questions.field_answers_quiz
+field_name: field_answers_quiz
+entity_type: paragraph
+bundle: questions
+label: Answers
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      answers: answers
+    sort:
+      field: changed
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

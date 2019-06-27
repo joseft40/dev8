@@ -1,0 +1,42 @@
+uuid: 04ab7061-6fff-408d-a7fe-b50bd9e46799
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.quiz.field_questions_quiz
+    - node.type.quiz
+  module:
+    - paragraphs
+id: node.quiz.default
+targetEntityType: node
+bundle: quiz
+mode: default
+content:
+  field_questions_quiz:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

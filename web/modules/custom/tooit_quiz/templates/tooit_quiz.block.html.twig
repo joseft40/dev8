@@ -1,0 +1,16 @@
+{#
+/**
+ * @file decoupled_quiz.block.html.twig
+ * Default theme implementation to present decoupled_quiz block.
+ *
+ * This template is used when viewing decoupled_quiz block.
+ *
+ * @ingroup themeable
+ */
+#}
+<div id="App-{{ qid }}" class="quiz tooit-quiz" data-quiz="{{ qid }}"></div>
+
+{{ attach_library('tooit_quiz/tooit_quiz_component') }}
+{{ attach_library('tooit_quiz/bootstrap') }}
+
+{{ attach_library('tooit_quiz/react') }}

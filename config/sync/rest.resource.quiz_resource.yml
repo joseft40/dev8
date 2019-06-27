@@ -1,0 +1,18 @@
+uuid: 99c93ce4-73f3-42f0-ac56-6e67f20c7a1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - tooit_quiz
+    - user
+id: quiz_resource
+plugin_id: quiz_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

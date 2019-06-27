@@ -1,0 +1,35 @@
+tooit_quiz_theme:
+  version: 1.x
+  css:
+    component:
+      css/tooit_quiz.css: {}
+
+tooit_quiz_component:
+  version: 1.0.0
+  footer: true
+  js:
+    js/index.js: { preprocess: 0, attributes: { type: text/jsx } }
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupalSettings
+    - core/jquery.once
+
+react:
+  remote: https://github.com/facebook/react
+  version: 15.3.1
+  license:
+    name: BSD
+    url: https://github.com/facebook/react/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    # Non-minified version: development friendly, debugging is possible.
+    https://npmcdn.com/react@15.3.1/dist/react.js: { type: external, minified: false }
+    https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js: { type: external, minified: false }
+    https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js: { type: external, minified: false }
+
+bootstrap:
+  version: 4.3.1
+  css:
+    theme:
+      https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css: { type: external, minified: true }

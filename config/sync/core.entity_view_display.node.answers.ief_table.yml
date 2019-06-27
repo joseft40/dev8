@@ -1,0 +1,34 @@
+uuid: 19ad275f-46bf-46ca-b4d4-a1182a1d6917
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.ief_table
+    - field.field.node.answers.body
+    - field.field.node.answers.field_is_a_correct_answers
+    - node.type.answers
+  module:
+    - options
+    - user
+id: node.answers.ief_table
+targetEntityType: node
+bundle: answers
+mode: ief_table
+content:
+  field_is_a_correct_answers:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  label:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true
+  links: true
+  status: true
