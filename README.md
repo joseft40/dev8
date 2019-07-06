@@ -35,8 +35,12 @@ drush cr
 ```
 
 ### Import config from a config directory and clear cache
+Get uid of config orig site
 ```
 drush config-get "system.site" uuid
+```
+Set uid
+```
 drush config-set "system.site" uuid "9fb3723c-e78a-415b-9ff4-b75abc879b78" && drush cr
 drush cim && drush cr
 ```
